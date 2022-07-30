@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+     <!--Câu 1-->
+     <div class="container py-5">
+      <h2>
+        Câu 1: Cho người dùng nhập vào 3 số nguyên. Viết chương trình xuất 3 số
+        theo thứ tự tăng dần
+      </h2>
+      <div class="form-group">
+        <label for="">Nhập số thứ nhất</label>
+        <input type="text" name="" id="soThuNhat" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="">Nhập số thứ hai</label>
+        <input type="text" name="" id="soThuHai" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="">Nhập số thứ ba</label>
+        <input type="text" name="" id="soThuBa" class="form-control" />
+      </div>
+      <button type="button" name="" id="" onclick="sapXep()" class="btn btn-primary" btn-lg btn-block">Sắp xếp</button>
+      <div id="ketQua1"></div>
+    </div>
+    <!--Cau 2-->
+    <div class="container py-5">
+      <h2>BT2:Viết chương trình “Chào hỏi” các thành viên trong gia đình với các đặc điểm. Đầu tiên máy sẽ
+          hỏi ai sử dụng máy. Sau đó dựa vào câu trả lời và đưa ra lời chào phù hợp. Giả sử trong gia
+          đình có 4 thành viên: Bố (B), Mẹ (M), anh Trai (A) và Em gái (E)</h2>
+      <div class="form-group">
+        <label for="">Ai đang sử dụng máy ?</label>
+        <select class="form-control" id="thanhVien">
+          <option id="bo" >Bố</option>
+          <option id="me" >Mẹ</option>
+          <option id="anhTrai" >Anh trai</option>
+          <option id="emGai" >Em gái</option>
+        </select>
+      </div>
+      <button type="button" name="" id="sayHi"  class="btn btn-primary" btn-lg btn-block">Gửi lời chào</button>
+      <div id="ketQua2"></div>
+    </div>
+   <!--Cau 3-->
+      <div class="container py-5">
+        <h2>BT3: Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn.</h2>
+        <div class="form-group">
+          <label for="">Nhập số thứ nhất</label>
+          <input type="text" name="" id="c3SoThuNhat" class="form-control" >
+          <label for="">Nhập số thứ hai</label>
+          <input type="text" name="" id="c3SoThuHai" class="form-control" >
+          <label for="">Nhập số thứ ba</label>
+          <input type="text" name="" id="c3SoThuBa" class="form-control" >
+        </div>
+        <button type="button" name="" id="" onclick="Dem()" class="btn btn-primary" btn-lg btn-block">Đếm</button>
+        <div id="ketQua3"></div>
+      </div>
+    <!--Cau 4-->
+      <div class="container py-5">
+        <h2>BT4:Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì?</h2>
+        <div class="form-group">
+          <label for="">Nhập độ dài cạnh thứ nhất</label>
+          <input type="text" name="" id="canhThuNhat" class="form-control">
+          <label for="">Nhập độ dài cạnh thứ hai</label>
+          <input type="text" name="" id="canhThuHai" class="form-control">
+          <label for="">Nhập độ dài cạnh thứ ba</label>
+          <input type="text" name="" id="canhThuBa" class="form-control">
+        </div>
+        <button type="button" name="" id="" onclick="duDoan()" class="btn btn-primary" btn-lg btn-block">Dự Đoán</button>
+        <div id="ketQua4"></div>
+      </div>
+    <!--Cau 5-->
+<div class="container py-5">
+  <h2>BT5:Viết chương trình nhập vào ngày, tháng, năm (Giả sử nhập đúng, không cần kiểm tra hợp lệ).
+    Tìm ngày, tháng, năm của ngày tiếp theo. Tương tự tìm ngày tháng năm của ngày trước đó</h2>
+  <div class="form-group">
+    <label for="">Nhập ngày</label>
+    <input type="number" name="" id="ngay" >
+    <label for="">Nhập tháng</label>
+    <input type="number" name="" id="thang" >
+    <label for="">Nhập năm</label>
+    <input type="number" name="" id="nam" >
+  </div>
+  <button type="button" name="" id="" onclick="ngayTruoc()" class="btn btn-primary" btn-lg btn-block">Ngày hôm qua</button>
+  <button type="button" name="" id="" onclick="ngaySau()" class="btn btn-primary" btn-lg btn-block">Ngày mai</button>
+<div id="ketQua5"></div>
+</div>
+<!--Bai 6-->
+<div class="container py-5">
+  <h2>BT:6Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày.(bao gồm tháng
+      của năm nhuận).</h2>
+  <div class="form-group">
+    <label for="">Nhập tháng</label>
+    <input type="number"
+      class="form-control" name="" id="bt6_thang" >
+  </div>
+  <div class="form-group">
+      <label for="">Nhập năm</label>
+      <input type="number"
+        class="form-control" name="" id="bt6_nam" >
+    </div>
+    <button type="button" name="" id="" onclick="tinhNgay()" class="btn btn-primary" btn-lg btn-block">Tính Ngày</button>
+    <div id="ketQua6"></div>
+  </div>
+<!--Bài 7-->
+<div class="container py-5">
+  <h2>BT:7Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc nó.</h2>
+  <div class="form-group">
+    <label for="">Nhập số có 3 chữ số</label>
+    <input type="text" name="" id="soBaChuSo" class="form-control" >
+  </div>
+  <button type="button" name="" id="" onclick="docSo()" class="btn btn-primary" btn-lg btn-block">Đọc số</button>
+<div id="ketQua7"></div>
+</div>
+<!--Bài 8-->
+<div class="container py-5">
+  <h2>BT:8 Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của trường đại học. Viết chương
+    trình in tên sinh viên xa trường nhất.</h2>
+  <div class="form-group">
+    <label for="">Tọa độ sinh viên 1</label>
+    <input type="text" placeholder="x" name="" id="toaDoX1" class="form-control" >
+    <input type="text" placeholder="y" name="" id="toaDoY1" class="form-control" >  
+  </div>
+  <div class="form-group">
+    <label for="">Tọa độ sinh viên 2</label>
+    <input type="text" placeholder="x" name="" id="toaDoX2" class="form-control" >
+    <input type="text" placeholder="y" name="" id="toaDoY2" class="form-control" >  
+  </div>
+  <div class="form-group">
+    <label for="">Tọa độ sinh viên 3</label>
+    <input type="text" placeholder="x" name="" id="toaDoX3" class="form-control" >
+    <input type="text" placeholder="y" name="" id="toaDoY3" class="form-control" >  
+  </div>
+  <div class="form-group">
+    <label for="">Tọa độ trường</label>
+    <input type="text" placeholder="x" name="" id="toaDoX4" class="form-control" >
+    <input type="text" placeholder="y" name="" id="toaDoY4" class="form-control" >  
+  </div>
+  <button type="button" name="" id="" onclick="tinhToaDo()" class="btn btn-primary" btn-lg btn-block">Tìm</button>
+<div id="ketQua8"></div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./bai3.js"></script>  
+</body>
+</html>
